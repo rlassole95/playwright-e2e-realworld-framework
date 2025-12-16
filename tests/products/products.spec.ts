@@ -1,7 +1,7 @@
 import { test } from '@playwright/test'
 import { ProductsPage } from '../../pages/products.page'
 
-test.describe('Products - Inventory', () => {
+test.describe('@smoke Products - Inventory', () => {
   test('User can add a product to the cart', async ({ page }) => {
     const productsPage = new ProductsPage(page)
 

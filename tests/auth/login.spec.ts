@@ -3,7 +3,7 @@ import { LoginPage } from '../../pages/login.page'
 import { users } from '../../fixtures/users'
 import { errorMessages } from '../../fixtures/messages'
 
-test.describe('Login - Saucedemo', () => {
+test.describe('@smoke @regression Login - Saucedemo', () => {
   test('User can login with valid credentials', async ({ page }) => {
     const loginPage = new LoginPage(page)
 
