@@ -1,8 +1,12 @@
-import { test, expect } from '@playwright/test'
+import { test } from '@playwright/test'
+import { ProductsPage } from '../../pages/products.page'
 
-test('User sees products page when authenticated', async ({ page }) => {
-  await page.goto('/inventory.html')
+test.describe('Products - Inventory', () => {
+  test('User can add a product to the cart', async ({ page }) => {
+    const productsPage = new ProductsPage(page)
 
-  await expect(page).toHaveURL(/inventory.html/)
-  await expect(page.locator('.inventory_list')).toBeVisible()
+    await productsPage.goto()
+    await productsPage.addProductToCart('Sauce Labs Backpack')
+    await productsPage.assertCartCount(1)
+  })
 })
