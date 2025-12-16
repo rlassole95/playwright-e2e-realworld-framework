@@ -1,0 +1,27 @@
+{
+  "name": "playwright-realworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlassole95/playwright-e2e-realworld-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rlassole95/playwright-e2e-realworld-framework/issues"
+  },
+  "homepage": "https://github.com/rlassole95/playwright-e2e-realworld-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
